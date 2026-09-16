@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Minita Films | Productora de cine</title>
+<meta name="description" content="Minita Films es una productora de cine. Desarrollo, producción y postproducción de largometrajes, cortometrajes y contenido audiovisual.">
+<link rel="canonical" href="https://minitafilms.com/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#151718">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Minita Films">
+<meta property="og:title" content="Minita Films | Productora de cine">
+<meta property="og:description" content="Productora de cine. Desarrollo, producción y postproducción de largometrajes, cortometrajes y contenido audiovisual.">
+<meta property="og:url" content="https://minitafilms.com/">
+<meta property="og:image" content="https://minitafilms.com/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="es_AR">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Minita Films",
+  "url": "https://minitafilms.com/",
+  "logo": "https://minitafilms.com/og.png",
+  "description": "Productora de cine. Desarrollo, producción y postproducción de largometrajes, cortometrajes y contenido audiovisual."
+}
+</script>
+<style>
+  :root { --x: -999px; --y: -999px; --r: 70px; }
+  html, body { margin: 0; height: 100%; background: #151718; cursor: none; }
+  .layer {
+    position: fixed; inset: 0;
+    display: grid; place-items: center;
+    background: #151718;
+  }
+  .layer img {
+    width: min(60vw, 480px); height: auto;
+    user-select: none; -webkit-user-drag: none; pointer-events: none;
+  }
+  .invert {
+    background: #f6f2eb;
+    pointer-events: none;
+    clip-path: circle(var(--r) at var(--x) var(--y));
+  }
+  .sr-only {
+    position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0;
+    overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+  }
+  @media (hover: none) {
+    html, body { cursor: auto; }
+    .invert { display: none; }
+  }
+</style>
+</head>
+<body>
+  <main>
+    <h1 class="sr-only">Minita Films</h1>
+    <p class="sr-only">Productora de cine. Desarrollo, producción y postproducción de largometrajes, cortometrajes y contenido audiovisual.</p>
+    <div class="layer"><img src="logo-light.png" width="640" height="332" alt="Minita Films, productora de cine" fetchpriority="high"></div>
+    <div class="layer invert" aria-hidden="true"><img src="logo-dark.png" width="641" height="334" alt=""></div>
+  </main>
+  <script>
+    const s = document.documentElement.style;
+    addEventListener('pointermove', e => { s.setProperty('--x', e.clientX + 'px'); s.setProperty('--y', e.clientY + 'px'); });
+    addEventListener('pointerleave', () => { s.setProperty('--x', '-999px'); s.setProperty('--y', '-999px'); });
+  </script>
+</body>
+</html>
